@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <head>
+        <div class = "jumbotron">
+            <h1>Rock, Paper, Scissors Game</h1>
+        </div> 
+        
+    </head> 
+    <div class = "sign-in">
+        <form>
+            <div class="form-group">
+              <div class="col-sm-3">
+              <input type="text" class="form-control" id="signin-input" placeholder="Your name">
+            </div>
+        </div>
+        <button id="register" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class ="main-container">
+        <div class ="user-choice">
+            <h3>Choose!</h3>
+            <button value="rock"><img src="../assets/images/rock.jpg" width="70" height="70"></button>
+            <button value="paper"><img src="../assets/images/paper.jpeg" width="70" height="70"></button>
+            <button value="scissors"><img src="../assets/images/scissors.jpeg" width="70" height="70"></button>
+        </div> 
+    <br>
+    <br>
+    <div class ="display-choice"></div> 
+    <p>You chose<p> 
+    <div id="choice"></div>
+    </div> 
+    <div id = "signout">
+        <button>Sign out</button>
+    </div>
+   
+    
+
+<script type="text/javascript" src="../assets/js/index.js"></script>
+</body>
+</html>
